@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url("https://media1.giphy.com/media/FlodpfQUBSp20/giphy.gif");
+}
+h1 {
+  font-family: Arial;
+  font-size: 35px;
+  text-shadow: 3px 2px #5500ff;
+  line-height: 0px;
+}
+
+p {
+font-size: 20px;
+color: white;
+}
+
+.links {
+  font-size: 18px;
+  color: purple;
+}
+.btn {
+  background-color: #8e7fac;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {opacity: 0.8}
+
+a:hover {
+  color: #342976;
+}
+</center>
+</style>
+</head>
+<body>
+<center>
+<img src="http://i65.tinypic.com/iw3l2x.png" width="738" height="105" alt="Fortune Teller" /></a><br />
+<img src="http://i65.tinypic.com/s1roxt.gif" alt="Nisha" /></a>
+<h1 style="color:white;">what lies in your future?</h1>
+<img src="https://media.giphy.com/media/BZUXTEvJSPsUo/giphy.gif" width="461" height="346" alt="mystic seer" /></a>
+
+<p id="fortune"> Will you find true love, or be a heartbreaker? Will you have a pet llama?</p>
+<button class="btn" type="button" onclick="replaceName()"> Click here to find out!</button>
+
+<br /> <br />
+<a class="links" target="_blank" href="https://www.astrology.com/horoscopes.html">Daily Horoscope |</a>
+<a class= "links" target="_blank" href="https://www.astrology.com/tarot/yes-no.html">Tarot Card Reading</a>
+<script>
+
+function replaceName() {
+   var job = prompt("What is your dream job?");
+   var color = prompt("Favorite color?");
+   var city = prompt("the most beautiful place on earth:");
+   var spouse = prompt("Favorite singer?");
+   var fear = prompt("What are you afraid of?");
+   var babies = prompt("Lucky number:");
+   var pet = prompt("What is your spirit animal?");
+   var petName = prompt ("What is the name of your first grade teacher?");
+
+  var future = 'In 10 years, you will become a successful ' + job + ', and you will drive a shiny, ' +
+  color + ' porsche in ' + city + ". <br> There you will meet your future lover, " + spouse +
+  ", who will save you from your fear of " + fear + ". You two will get married and have " +
+  babies + " babies. <br> You will find a stray " + pet + " in your backyard one day, and beg " + spouse +
+  " to keep it. <br> You will name the " + pet + " " + petName + "."
+  document.getElementById("fortune").innerHTML = future;
+}
+
+</script>
+
+</center>
+</body>
+</html>
